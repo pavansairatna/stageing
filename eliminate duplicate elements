@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class EliminateDuplicates {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Set<Integer> uniqueSet = new TreeSet<>();
+        System.out.println("Enter a list of integers (one per line), ending with a non-integer character:");
+        while (input.hasNextInt()) {
+            uniqueSet.add(input.nextInt());
+        }
+        for (int num : uniqueSet) {
+            System.out.println(num);
+        }
+    }
+}
